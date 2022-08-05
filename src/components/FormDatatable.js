@@ -68,7 +68,7 @@ const FormDatatable = ({ columns, data }) => {
 
             updatedData = data.filter(item => {
                 return (
-                    turkishToLower(item.fullname).includes(dataTableSearchQueryLower) ||
+                    turkishToLower(item.fullName).includes(dataTableSearchQueryLower) ||
                     turkishToLower(item.email).includes(dataTableSearchQueryLower)
                 )
             })
